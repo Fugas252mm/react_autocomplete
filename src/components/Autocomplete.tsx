@@ -57,7 +57,7 @@ export const Autocomplete: React.FC<Props> = React.memo(
 
     return (
       <>
-        <div className={`dropdown ${showNoResults ? '' : 'is-active'}`}>
+        <div className={`dropdown ${filteredPeople.length > 0 && 'is-active'}`}>
           <div className="dropdown-trigger">
             <input
               autoFocus
